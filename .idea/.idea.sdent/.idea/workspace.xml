@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d7a1d4-fed2-46ea-8ebe-8ba1558934e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/body.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/body/body_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/body/body_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/body/body_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/body/body_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/body/body_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/body/body_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/subtitle_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/subtitle_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/subtitle_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/subtitle_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/subtitle_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Factory/subtitle_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Factory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Factory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/uiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/uiManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,18 +31,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/PrefabLoader.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="285">
+              <caret line="19" column="28" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="28" />
               <folding>
-                <marker date="1559336717395" expanded="false" signature="6:78" ph="..." />
-                <marker date="1559336717395" expanded="true" signature="121:431" ph="{...}" />
-                <marker date="1559336717395" expanded="true" signature="224:236" ph="{...}" />
-                <marker date="1559336717395" expanded="true" signature="294:306" ph="{...}" />
-                <marker date="1559336717395" expanded="true" signature="336:429" ph="{...}" />
+                <marker date="1559384019373" expanded="true" signature="61:348" ph="{...}" />
+                <marker date="1559384019373" expanded="true" signature="164:176" ph="{...}" />
+                <marker date="1559384019373" expanded="true" signature="234:246" ph="{...}" />
+                <marker date="1559384019373" expanded="true" signature="276:346" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/FactoryHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-328">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding>
+                <marker date="1559509113911" expanded="true" signature="6:40" ph="..." />
+                <marker date="1559509113911" expanded="true" signature="85:2109" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="545:581" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="612:691" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="728:1095" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="756:1089" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="1127:1206" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="1232:1699" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="1260:1415" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="1428:1693" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="1733:2107" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="1787:1859" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="1907:1979" ph="{...}" />
+                <marker date="1559509113911" expanded="true" signature="2028:2101" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/GameHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+              <folding>
+                <marker date="1559509814401" expanded="false" signature="6:100" ph="..." />
+                <marker date="1559509814401" expanded="true" signature="142:856" ph="{...}" />
+                <marker date="1559509814401" expanded="true" signature="300:334" ph="{...}" />
+                <marker date="1559509814401" expanded="true" signature="365:775" ph="{...}" />
+                <marker date="1559509814401" expanded="true" signature="833:854" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -39,16 +94,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/FactoryHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PrefabLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/PrefabLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/FactoryHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameHandler.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -58,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
@@ -66,12 +126,13 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -93,12 +154,14 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="51737">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="51737" />
+      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -113,11 +176,13 @@
       <option name="presentableId" value="Default" />
       <updated>1559336234167</updated>
       <workItem from="1559336237784" duration="736000" />
+      <workItem from="1559383350159" duration="870000" />
+      <workItem from="1559507091399" duration="2904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="736000" />
+    <option name="totallyTimeSpent" value="4510000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -129,21 +194,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -151,19 +209,29 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Unity" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Performance Profiler" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -175,16 +243,52 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/FactoryHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <marker date="1559509113911" expanded="true" signature="6:40" ph="..." />
+            <marker date="1559509113911" expanded="true" signature="85:2109" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="545:581" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="612:691" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="728:1095" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="756:1089" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="1127:1206" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="1232:1699" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="1260:1415" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="1428:1693" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="1733:2107" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="1787:1859" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="1907:1979" ph="{...}" />
+            <marker date="1559509113911" expanded="true" signature="2028:2101" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/PrefabLoader.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="285">
+          <caret line="19" column="28" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <marker date="1559336717395" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559336717395" expanded="true" signature="121:431" ph="{...}" />
-            <marker date="1559336717395" expanded="true" signature="224:236" ph="{...}" />
-            <marker date="1559336717395" expanded="true" signature="294:306" ph="{...}" />
-            <marker date="1559336717395" expanded="true" signature="336:429" ph="{...}" />
+            <marker date="1559384019373" expanded="true" signature="61:348" ph="{...}" />
+            <marker date="1559384019373" expanded="true" signature="164:176" ph="{...}" />
+            <marker date="1559384019373" expanded="true" signature="234:246" ph="{...}" />
+            <marker date="1559384019373" expanded="true" signature="276:346" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GameHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+          <folding>
+            <marker date="1559509814401" expanded="false" signature="6:100" ph="..." />
+            <marker date="1559509814401" expanded="true" signature="142:856" ph="{...}" />
+            <marker date="1559509814401" expanded="true" signature="300:334" ph="{...}" />
+            <marker date="1559509814401" expanded="true" signature="365:775" ph="{...}" />
+            <marker date="1559509814401" expanded="true" signature="833:854" ph="{...}" />
           </folding>
         </state>
       </provider>

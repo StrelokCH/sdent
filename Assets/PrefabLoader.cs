@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PrefabLoader : MonoBehaviour
 {
@@ -18,7 +16,6 @@ public class PrefabLoader : MonoBehaviour
 
     public void LoadPrefab()
     {
-        print("PRes");
         Instantiate(Prefab);
         Destroy(gameObject);
     }
