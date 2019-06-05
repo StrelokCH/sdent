@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d7a1d4-fed2-46ea-8ebe-8ba1558934e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rocket.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactoryHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FactoryHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrefabLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrefabLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/body/body_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/body/body_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/body/body_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/body/body_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/body/body_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/body/body_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/flames/flame1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/flames/flame1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/flames/flame1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/flames/flame1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/flames/flame2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/flames/flame2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/flames/flame2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/flames/flame2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/flames/flame3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/flames/flame3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/wings/wings1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/wings/wings1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/wings/wings1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/wings/wings1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/wings/wings2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/wings/wings2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/wings/wings2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/wings/wings2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/wings/wings3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/wings/wings3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Game.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Game.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="240">
               <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
               <folding>
                 <marker date="1559714627930" expanded="false" signature="6:40" ph="..." />
@@ -67,17 +38,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+            <state relative-caret-position="90">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
                 <marker date="1559714627933" expanded="true" signature="19:501" ph="{...}" />
                 <marker date="1559714627933" expanded="true" signature="122:184" ph="{...}" />
                 <marker date="1559714627933" expanded="true" signature="206:270" ph="{...}" />
                 <marker date="1559714627933" expanded="true" signature="292:356" ph="{...}" />
                 <marker date="1559714627933" expanded="true" signature="395:499" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding>
+                <marker date="1559714084192" expanded="false" signature="6:78" ph="..." />
+                <marker date="1559714084192" expanded="true" signature="120:640" ph="{...}" />
+                <marker date="1559714084192" expanded="true" signature="304:485" ph="{...}" />
+                <marker date="1559714084192" expanded="true" signature="364:417" ph="{...}" />
+                <marker date="1559714084192" expanded="true" signature="430:479" ph="{...}" />
+                <marker date="1559714084192" expanded="true" signature="556:568" ph="{...}" />
+                <marker date="1559714084192" expanded="true" signature="626:638" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -198,12 +187,12 @@
       <workItem from="1559336237784" duration="736000" />
       <workItem from="1559383350159" duration="870000" />
       <workItem from="1559507091399" duration="3100000" />
-      <workItem from="1559713760055" duration="867000" />
+      <workItem from="1559713760055" duration="1395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5573000" />
+    <option name="totallyTimeSpent" value="6101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -216,9 +205,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -226,7 +214,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -236,7 +224,7 @@
       <window_info anchor="bottom" id="Unity" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Performance Profiler" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -333,22 +321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <marker date="1559714084192" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559714084192" expanded="true" signature="120:640" ph="{...}" />
-            <marker date="1559714084192" expanded="true" signature="304:485" ph="{...}" />
-            <marker date="1559714084192" expanded="true" signature="364:417" ph="{...}" />
-            <marker date="1559714084192" expanded="true" signature="430:479" ph="{...}" />
-            <marker date="1559714084192" expanded="true" signature="556:568" ph="{...}" />
-            <marker date="1559714084192" expanded="true" signature="626:638" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/uiManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -364,16 +336,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
-            <marker date="1559714627930" expanded="false" signature="6:40" ph="..." />
-            <marker date="1559714627930" expanded="true" signature="83:839" ph="{...}" />
-            <marker date="1559714627930" expanded="true" signature="242:276" ph="{...}" />
-            <marker date="1559714627930" expanded="true" signature="307:767" ph="{...}" />
-            <marker date="1559714627930" expanded="true" signature="825:837" ph="{...}" />
+            <marker date="1559714084192" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559714084192" expanded="true" signature="120:640" ph="{...}" />
+            <marker date="1559714084192" expanded="true" signature="304:485" ph="{...}" />
+            <marker date="1559714084192" expanded="true" signature="364:417" ph="{...}" />
+            <marker date="1559714084192" expanded="true" signature="430:479" ph="{...}" />
+            <marker date="1559714084192" expanded="true" signature="556:568" ph="{...}" />
+            <marker date="1559714084192" expanded="true" signature="626:638" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <marker date="1559714627933" expanded="true" signature="19:501" ph="{...}" />
+            <marker date="1559714627933" expanded="true" signature="122:184" ph="{...}" />
+            <marker date="1559714627933" expanded="true" signature="206:270" ph="{...}" />
+            <marker date="1559714627933" expanded="true" signature="292:356" ph="{...}" />
+            <marker date="1559714627933" expanded="true" signature="395:499" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -385,16 +373,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+        <state relative-caret-position="240">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding>
-            <marker date="1559714627933" expanded="true" signature="19:501" ph="{...}" />
-            <marker date="1559714627933" expanded="true" signature="122:184" ph="{...}" />
-            <marker date="1559714627933" expanded="true" signature="206:270" ph="{...}" />
-            <marker date="1559714627933" expanded="true" signature="292:356" ph="{...}" />
-            <marker date="1559714627933" expanded="true" signature="395:499" ph="{...}" />
+            <marker date="1559714627930" expanded="false" signature="6:40" ph="..." />
+            <marker date="1559714627930" expanded="true" signature="83:839" ph="{...}" />
+            <marker date="1559714627930" expanded="true" signature="242:276" ph="{...}" />
+            <marker date="1559714627930" expanded="true" signature="307:767" ph="{...}" />
+            <marker date="1559714627930" expanded="true" signature="825:837" ph="{...}" />
           </folding>
         </state>
       </provider>
