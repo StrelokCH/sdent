@@ -7,6 +7,8 @@ public class RocketLoader : MonoBehaviour
     public GameObject Wings;
     public GameObject Flame;
 
+    public Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +29,10 @@ public class RocketLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * 500);
+            print("space key was pressed");
+        }
     }
 }
