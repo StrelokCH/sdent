@@ -3,20 +3,12 @@ using UnityEngine.UI;
 
 public class FactoryHandler : MonoBehaviour
 {
-    public int SelectedBody = 1;
-    public int SelectedWings = 1;
-    public int SelectedFlame = 1;
-
     private int step = 1;
 
     public GameObject[] Bodies;
     public GameObject[] Flames;
     public GameObject[] Wings;
-
-    public static string PREFS_BODY = "Prefs_Body";
-    public static string PREFS_WINGS = "Prefs_Wings";
-    public static string PREFS_FLAMES = "Prefs_Flames";
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,13 +27,13 @@ public class FactoryHandler : MonoBehaviour
         switch (step)
         {
             case 1:
-                SelectedBody = (SelectedBody + signum) % 3;
+                GameHandler.Instance.Rocket.Body = (GameHandler.Instance.Rocket.Body + signum) % 3;
                 break;
             case 2:
-                SelectedWings = (SelectedWings + signum) % 3;
+                GameHandler.Instance.Rocket.Wings = (GameHandler.Instance.Rocket.Wings + signum) % 3;
                 break;
             case 3:
-                SelectedFlame = (SelectedFlame + signum) % 3;
+                GameHandler.Instance.Rocket.Flame = (GameHandler.Instance.Rocket.Flame + signum) % 3;
                 break;
         }
     }
@@ -62,9 +54,6 @@ public class FactoryHandler : MonoBehaviour
         }
         else
         {
-            PlayerPrefs.SetInt(PREFS_BODY, SelectedBody);
-            PlayerPrefs.SetInt(PREFS_WINGS, SelectedWings);
-            PlayerPrefs.SetInt(PREFS_FLAMES, SelectedFlame);
             gameObject.GetComponent<PrefabLoader>().LoadPrefab();
         }
     }
@@ -74,17 +63,17 @@ public class FactoryHandler : MonoBehaviour
     {
         for (int i = 0; i < Bodies.Length; i++)
         {
-            Bodies[i].SetActive(i == SelectedBody);
+            Bodies[i].SetActive(i == GameHandler.Instance.Rocket.Body);
         }
 
         for (int i = 0; i < Wings.Length; i++)
         {
-            Wings[i].SetActive(i == SelectedWings);
+            Wings[i].SetActive(i == GameHandler.Instance.Rocket.Wings);
         }
 
         for (int i = 0; i < Flames.Length; i++)
         {
-            Flames[i].SetActive(i == SelectedFlame);
+            Flames[i].SetActive(i == GameHandler.Instance.Rocket.Flame);
         }
     }
 }

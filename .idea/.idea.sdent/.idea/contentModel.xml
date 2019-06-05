@@ -4,10 +4,12 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="FactoryHandler.cs" t="Include" />
-        <e p="GameHandler.cs" t="Include" />
-        <e p="PrefabLoader.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="FactoryHandler.cs" t="Include" />
+          <e p="GameHandler.cs" t="Include" />
+          <e p="PrefabLoader.cs" t="Include" />
+          <e p="Rocket.cs" t="Include" />
+          <e p="RocketLoader.cs" t="Include" />
           <e p="uiManager.cs" t="Include" />
         </e>
       </e>
