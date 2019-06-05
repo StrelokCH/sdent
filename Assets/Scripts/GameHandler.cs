@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameHandler : MonoBehaviour
 {
     public Rocket Rocket = new Rocket();
+    public GameObject StartPrefab;
 
     //Using Instance so that the Object is Singleton
     public static GameHandler Instance { get; private set; }
@@ -24,6 +25,7 @@ public class GameHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instantiate(StartPrefab);
     }
 
     // Update is called once per frame
