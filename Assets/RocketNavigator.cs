@@ -14,15 +14,14 @@ public class RocketNavigator : MonoBehaviour
         
         if (Input.touchCount > 0)
         {
-            speedX = Input.acceleration.x * speed;
-            transform.position = new Vector2(Mathf.Clamp(transform.position.x, -2f, 2f), transform.position.y);
-            rb.velocity = new Vector2(speedX, 0f);
-            rb.AddForce(Vector3.up * 5);
+            //rb.velocity = new Vector2(speedX, rb.velocity.y);
+            rb.AddForce(Vector3.up * 5 + Vector3.right * Input.acceleration.x);
         }
     }
 
     private void OnBecameInvisible()
     {
+        print("invisible");
         var worldToScreenPoint = Camera.main.WorldToScreenPoint(transform.localPosition);
         
         if (worldToScreenPoint.x > Screen.width || worldToScreenPoint.x < 0)
