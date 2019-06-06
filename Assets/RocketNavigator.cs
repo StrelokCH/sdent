@@ -11,16 +11,14 @@ public class RocketNavigator : MonoBehaviour
     void Update()
     {
         flame.SetActive(rb.velocity.y > 0);
-    }
-
-    private void OnMouseDown()
-    {
-        speedX = Input.acceleration.x * speed;
-        transform.position = new Vector2(Mathf.Clamp(transform.position.x, -2f, 2f), transform.position.y);
-
-        rb.velocity = new Vector2(speedX, 0f);
-
-        rb.AddForce(Vector3.up * 100);
+        
+        if (Input.touchCount > 0)
+        {
+            speedX = Input.acceleration.x * speed;
+            transform.position = new Vector2(Mathf.Clamp(transform.position.x, -2f, 2f), transform.position.y);
+            rb.velocity = new Vector2(speedX, 0f);
+            rb.AddForce(Vector3.up * 5);
+        }
     }
 
     private void OnBecameInvisible()
