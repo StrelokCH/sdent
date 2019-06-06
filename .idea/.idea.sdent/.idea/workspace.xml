@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d7a1d4-fed2-46ea-8ebe-8ba1558934e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sdent/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Game.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Game.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
                 <marker date="1559728365835" expanded="false" signature="6:40" ph="..." />
                 <marker date="1559728365835" expanded="true" signature="83:1019" ph="{...}" />
@@ -32,10 +33,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/3d/18c3ba96/Vector2.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding>
+                <marker date="1559817643120" expanded="false" signature="6:78" ph="..." />
+                <marker date="1559817643120" expanded="true" signature="121:504" ph="{...}" />
+                <marker date="1559817643120" expanded="true" signature="228:249" ph="{...}" />
+                <marker date="1559817643120" expanded="true" signature="307:502" ph="{...}" />
+                <marker date="1559817643120" expanded="true" signature="367:496" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
+            <state relative-caret-position="90">
               <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
                 <marker date="1559714627933" expanded="true" signature="19:501" ph="{...}" />
@@ -56,20 +64,84 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+              <folding>
+                <marker date="1559820048361" expanded="false" signature="6:78" ph="..." />
+                <marker date="1559820048361" expanded="true" signature="123:962" ph="{...}" />
+                <marker date="1559820048361" expanded="true" signature="397:890" ph="{...}" />
+                <marker date="1559820048361" expanded="true" signature="504:884" ph="{...}" />
+                <marker date="1559820048361" expanded="true" signature="948:960" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/RocketNavigator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <marker date="1559820015050" expanded="true" signature="6:92" ph="..." />
+                <marker date="1559820015050" expanded="true" signature="138:356" ph="{...}" />
+                <marker date="1559820015050" expanded="true" signature="215:271" ph="{...}" />
+                <marker date="1559820015050" expanded="true" signature="303:354" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/61/5e83888c/Object.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A12B6BAE-CE58-40D4-80E0-869A49672B2F/6c/5a0abd94/Rigidbody2D.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="422" column="16" selection-start-line="422" selection-start-column="16" selection-end-line="422" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/24/16c25024/Input.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/3d/18c3ba96/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A12B6BAE-CE58-40D4-80E0-869A49672B2F/6c/5a0abd94/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FactoryHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/3d/18c3ba96/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/4a/c4e16960/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/61/5e83888c/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RocketNavigator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/uiManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FactoryHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/24/16c25024/Input.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -81,28 +153,30 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/RocketNavigator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -113,6 +187,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -157,12 +232,13 @@
       <workItem from="1559507091399" duration="3100000" />
       <workItem from="1559713760055" duration="1420000" />
       <workItem from="1559715786531" duration="159000" />
-      <workItem from="1559727152743" duration="892000" />
+      <workItem from="1559727152743" duration="906000" />
+      <workItem from="1559816009033" duration="2969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7177000" />
+    <option name="totallyTimeSpent" value="10160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -174,10 +250,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26800978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -195,7 +271,7 @@
       <window_info anchor="bottom" id="Unity" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.31428573" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Performance Profiler" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -328,9 +404,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/3d/18c3ba96/Vector2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/24/16c25024/Input.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A12B6BAE-CE58-40D4-80E0-869A49672B2F/6c/5a0abd94/Rigidbody2D.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="422" column="16" selection-start-line="422" selection-start-column="16" selection-end-line="422" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/61/5e83888c/Object.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <marker date="1559728365835" expanded="false" signature="6:40" ph="..." />
+            <marker date="1559728365835" expanded="true" signature="83:1019" ph="{...}" />
+            <marker date="1559728365835" expanded="true" signature="270:304" ph="{...}" />
+            <marker date="1559728365835" expanded="true" signature="335:795" ph="{...}" />
+            <marker date="1559728365835" expanded="true" signature="853:1017" ph="{...}" />
+            <marker date="1559728365835" expanded="true" signature="904:1011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
+        <state relative-caret-position="90">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <marker date="1559714627933" expanded="true" signature="19:501" ph="{...}" />
@@ -342,24 +461,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3B14123E-EC64-49DC-BDCE-6FE247C0F416/3d/18c3ba96/Vector2.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="270">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <marker date="1559817643120" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559817643120" expanded="true" signature="121:504" ph="{...}" />
+            <marker date="1559817643120" expanded="true" signature="228:249" ph="{...}" />
+            <marker date="1559817643120" expanded="true" signature="307:502" ph="{...}" />
+            <marker date="1559817643120" expanded="true" signature="367:496" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/RocketNavigator.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
-            <marker date="1559728365835" expanded="false" signature="6:40" ph="..." />
-            <marker date="1559728365835" expanded="true" signature="83:1019" ph="{...}" />
-            <marker date="1559728365835" expanded="true" signature="270:304" ph="{...}" />
-            <marker date="1559728365835" expanded="true" signature="335:795" ph="{...}" />
-            <marker date="1559728365835" expanded="true" signature="853:1017" ph="{...}" />
-            <marker date="1559728365835" expanded="true" signature="904:1011" ph="{...}" />
+            <marker date="1559820015050" expanded="true" signature="6:92" ph="..." />
+            <marker date="1559820015050" expanded="true" signature="138:356" ph="{...}" />
+            <marker date="1559820015050" expanded="true" signature="215:271" ph="{...}" />
+            <marker date="1559820015050" expanded="true" signature="303:354" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <marker date="1559820048361" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559820048361" expanded="true" signature="123:962" ph="{...}" />
+            <marker date="1559820048361" expanded="true" signature="397:890" ph="{...}" />
+            <marker date="1559820048361" expanded="true" signature="504:884" ph="{...}" />
+            <marker date="1559820048361" expanded="true" signature="948:960" ph="{...}" />
           </folding>
         </state>
       </provider>
