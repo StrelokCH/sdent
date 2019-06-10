@@ -937,9 +937,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 3078529444713075192, guid: fec17193a83224e33b2c84ea9d83960f,
     type: 3}
+  asteroidPrefab: {fileID: 6625850606370902170, guid: 1fbe11be28cafd04994550c079adf77f,
+    type: 3}
   starContainer: {fileID: 1077349363}
   numberOfStars: 200
-  levelWidth: 3
   minY: 0.2
   maxY: 1.5
 --- !u!212 &2946655973048596235

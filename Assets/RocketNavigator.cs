@@ -17,6 +17,9 @@ public class RocketNavigator : MonoBehaviour
         }
 
         rb.AddForce(15 * Input.acceleration.x * Vector3.right);
+
+        // stabilizer
+
     }
 
     private void OnBecameInvisible()
