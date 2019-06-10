@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="210">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
                 <marker date="1560183498097" expanded="false" signature="6:40" ph="..." />
                 <marker date="1560183498097" expanded="true" signature="83:731" ph="{...}" />
@@ -53,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="90">
               <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
                 <marker date="1559817643120" expanded="false" signature="6:78" ph="..." />
@@ -105,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/RocketNavigator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="480">
               <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <marker date="1560180908613" expanded="false" signature="6:40" ph="..." />
@@ -318,12 +318,12 @@
       <workItem from="1559816009033" duration="3034000" />
       <workItem from="1559820124140" duration="689000" />
       <workItem from="1559822877059" duration="3346000" />
-      <workItem from="1560181808688" duration="1517000" />
+      <workItem from="1560181808688" duration="1623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15777000" />
+    <option name="totallyTimeSpent" value="15883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -497,7 +497,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="90">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding>
             <marker date="1559817643120" expanded="false" signature="6:78" ph="..." />
@@ -543,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/RocketNavigator.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="480">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <marker date="1560180908613" expanded="false" signature="6:40" ph="..." />
@@ -607,8 +607,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketLoader.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="210">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <marker date="1560183498097" expanded="false" signature="6:40" ph="..." />
             <marker date="1560183498097" expanded="true" signature="83:731" ph="{...}" />
