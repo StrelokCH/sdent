@@ -6,8 +6,10 @@
       <e p="Assets" t="Include">
         <e p="RocketNavigator.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Asteroid.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="FactoryHandler.cs" t="Include" />
+          <e p="FactoryTexts.cs" t="Include" />
           <e p="GameHandler.cs" t="Include" />
           <e p="LevelGenerator.cs" t="Include" />
           <e p="PrefabLoader.cs" t="Include" />
