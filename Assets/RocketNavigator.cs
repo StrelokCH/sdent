@@ -71,4 +71,13 @@ public class RocketNavigator : MonoBehaviour
     {
         transform.position = new Vector3(-transform.position.x, transform.position.y, transform.position.z);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == Asteroid.AsteroidTag)
+        {
+            // Todo: add effect if rocket is hit
+
+        }
+    }
 }
