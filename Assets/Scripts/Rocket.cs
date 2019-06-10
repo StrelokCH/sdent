@@ -1,8 +1,8 @@
 public class Rocket
 {
-    private int body = 1;
-    private int wings = 1;
-    private int flame = 1;
+    private int body;
+    private int wings;
+    private int flame;
 
     public int Body
     {
