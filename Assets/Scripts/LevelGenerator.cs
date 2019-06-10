@@ -10,6 +10,8 @@ public class LevelGenerator : MonoBehaviour
     public Transform asteroidContainer;
     public GameObject rocket;
 
+    public GameObject restartButton;
+
     public int numberOfStars = 200;
 
     public static float marsHeight = 200f;
@@ -28,25 +30,33 @@ public class LevelGenerator : MonoBehaviour
         var cameraFollow = Camera.main.gameObject.AddComponent<CameraFollow>();
         cameraFollow.target = rocket.transform;
         SpawnStars();
-        
+
 
         InvokeRepeating("CreateAsteroid", 5f, 1.5f);
     }
 
     void Update()
     {
+        var position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.height / 2, Screen.width / 2, 0));
+        Debug.Log(position.y);
+
         if (!flying)
         {
-            var position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.height / 2, Screen.width / 2, 0));
             if (position.y > flyingHeight)
             {
                 flying = true;
             }
         }
-        
+
         if (rocket.transform.position.y > starSpawnPosition.y - 20)
         {
             SpawnStars();
+        }
+
+        if (rocket.transform.position.y < position.y - levelHeight/2)
+        {
+            Debug .Log("You Died");
+            restartButton.SetActive(true);
         }
     }
 
