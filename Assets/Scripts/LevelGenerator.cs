@@ -7,6 +7,7 @@ public class LevelGenerator : MonoBehaviour
     public GameObject starPrefab;
     public GameObject asteroidPrefab;
     public Transform starContainer;
+    public GameObject rocket;
 
     public int numberOfStars = 500;
 
@@ -21,6 +22,9 @@ public class LevelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        var cameraFollow = Camera.main.gameObject.AddComponent<CameraFollow>();
+        cameraFollow.target = rocket.transform;
+        
         Vector3 spawnPosition = new Vector3(0, 0, 1);
 
         for (int i = 0; i < numberOfStars; i++)

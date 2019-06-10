@@ -52,6 +52,7 @@ MonoBehaviour:
   asteroidPrefab: {fileID: 6625850606370902170, guid: 1fbe11be28cafd04994550c079adf77f,
     type: 3}
   starContainer: {fileID: 2851593174683490075}
+  rocket: {fileID: 2851593174119739697}
   numberOfStars: 200
   minY: 0.2
   maxY: 1.5
