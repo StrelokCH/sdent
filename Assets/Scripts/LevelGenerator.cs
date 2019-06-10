@@ -12,6 +12,7 @@ public class LevelGenerator : MonoBehaviour
 
     public int numberOfStars = 1000;
 
+    public static float marsHeight = 200f;
     public static float levelWidth = 2f;
     public static float levelHeight = 8f;
     public float minY = .01f;
