@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
+    public static string AsteroidTag = "Asteroid";
+
     Vector2 velocity = new Vector2(0, -4);
     readonly float velocityRangeX = .9f;
 

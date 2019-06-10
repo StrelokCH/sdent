@@ -17,13 +17,19 @@ public class RocketNavigator : MonoBehaviour
         }
 
         rb.AddForce(15 * Input.acceleration.x * Vector3.right);
-
-        // stabilizer
-
     }
 
     private void OnBecameInvisible()
     {
         transform.position = new Vector3(-transform.position.x, transform.position.y, transform.position.z);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == Asteroid.AsteroidTag)
+        {
+            // Todo: add effect if rocket is hit
+
+        }
     }
 }
