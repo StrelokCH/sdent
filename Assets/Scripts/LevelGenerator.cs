@@ -7,6 +7,7 @@ public class LevelGenerator : MonoBehaviour
     public GameObject starPrefab;
     public GameObject asteroidPrefab;
     public Transform starContainer;
+    public Transform asteroidContainer;
 
     public int numberOfStars = 500;
 
@@ -41,7 +42,7 @@ public class LevelGenerator : MonoBehaviour
     {
         if (flying)
         {
-            Instantiate(asteroidPrefab);
+            Instantiate(asteroidPrefab, asteroidContainer);
         }
     }
 
