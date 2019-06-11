@@ -52,6 +52,8 @@ public class RocketNavigator : MonoBehaviour
 
     public void Reset()
     {
+        rb.velocity = Vector2.zero;
+        gameObject.transform.rotation = Quaternion.identity;
         _died = false;
     }
 }

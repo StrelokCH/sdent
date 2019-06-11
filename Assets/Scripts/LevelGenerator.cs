@@ -21,7 +21,7 @@ public class LevelGenerator : MonoBehaviour
 
     public GameObject rocket;
     public GameObject restartContainer;
-    readonly float flyingHeight = 20f;
+    readonly float saveZone = 20f;
     
     public static float marsHeight = 200f;
     public static float levelWidth = 2f;
@@ -46,7 +46,7 @@ public class LevelGenerator : MonoBehaviour
 
         if (!_flying)
         {
-            if (position.y > flyingHeight)
+            if (position.y > saveZone)
             {
                 _flying = true;
             }
@@ -106,5 +106,6 @@ public class LevelGenerator : MonoBehaviour
         _cameraFollow.Reset();
         restartContainer.SetActive(false);
         _flying = false;
+        rocket.GetComponent<RocketNavigator>().Reset();
     }
 }
