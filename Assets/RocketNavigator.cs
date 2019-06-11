@@ -12,8 +12,10 @@ public class RocketNavigator : MonoBehaviour
     public GameObject flame;
     public Text text;
     public LevelGenerator levelGenerator;
-    private float forceStrength = 20f;
-    private int rotSpeed = 200;
+
+    private float MaxVelocity => 5f * GameHandler.Instance.Rocket.ThrustFactor;
+    private float ForceStrength => 20f * GameHandler.Instance.Rocket.ThrustFactor;
+    private float RotSpeed => 200 * GameHandler.Instance.Rocket.RotSpeedFactor;
 
     //Set to true for auto take off :)
     private bool cheatMode = false;
@@ -35,7 +37,7 @@ public class RocketNavigator : MonoBehaviour
 
             //forward or reverse thrust based on tilt
             _inputUp = Vector3.up;
-            rb.AddRelativeForce(_inputUp * forceStrength);
+            rb.AddRelativeForce(_inputUp * ForceStrength);
 
             //rotation left or right based on tilt
             dir.z = Input.acceleration.x;
@@ -44,10 +46,10 @@ public class RocketNavigator : MonoBehaviour
             rb.AddRelativeForce(Vector3.forward * dir.z);
 
             // Limit up force
-            rb.velocity = Vector3.ClampMagnitude(rb.velocity, 5f);
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, MaxVelocity);
 
             // Rotate Rocket based on tilt of the phone
-            transform.Rotate(Vector3.forward * (-rotSpeed * dir.z * Time.deltaTime), Space.World);
+            transform.Rotate(Vector3.forward * (-RotSpeed * dir.z * Time.deltaTime), Space.World);
         }
     }
 
@@ -78,6 +80,7 @@ public class RocketNavigator : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.angularDrag = 0f;
+        rb.mass = 1f * GameHandler.Instance.Rocket.MassFactor;
         gameObject.transform.rotation = Quaternion.identity;
         transform.localPosition = _startPosition;
         rb.bodyType = RigidbodyType2D.Dynamic;
