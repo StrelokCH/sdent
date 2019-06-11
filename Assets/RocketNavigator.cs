@@ -13,7 +13,7 @@ public class RocketNavigator : MonoBehaviour
     public Text text;
     public LevelGenerator levelGenerator;
     private float forceStrength = 20f;
-    private int rotSpeed = 40;
+    private int rotSpeed = 200;
 
     //Set to true for auto take off :)
     private bool cheatMode = false;
@@ -21,7 +21,7 @@ public class RocketNavigator : MonoBehaviour
 
     void Start()
     {
-       _startPosition = transform.position;
+        _startPosition = transform.position;
     }
 
     void FixedUpdate()
@@ -44,17 +44,10 @@ public class RocketNavigator : MonoBehaviour
             rb.AddRelativeForce(Vector3.forward * dir.z);
 
             // Limit up force
-            rb.velocity = Vector3.ClampMagnitude(rb.velocity, 9f);
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, 5f);
 
             // Rotate Rocket based on tilt of the phone
-            if (dir.z > .2)
-            {
-                transform.Rotate(Vector3.forward * (-rotSpeed * Time.deltaTime), Space.World);
-            }
-            else if (dir.z < -.2)
-            {
-                transform.Rotate(Vector3.forward * (rotSpeed * Time.deltaTime), Space.World);
-            }
+            transform.Rotate(Vector3.forward * (-rotSpeed * dir.z * Time.deltaTime), Space.World);
         }
     }
 

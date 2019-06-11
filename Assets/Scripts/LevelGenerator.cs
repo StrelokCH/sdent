@@ -24,9 +24,9 @@ public class LevelGenerator : MonoBehaviour
     public GameObject rocket;
     private RocketNavigator _rocketNavigator;
     public GameObject restartContainer;
-    readonly float saveZone = 20f;
+    readonly float saveZone = 10f;
 
-    public static float marsHeight = 20f;
+    public static float marsHeight = 80f;
     public static float levelWidth = 2f;
     public static float levelHeight = 8f;
 
