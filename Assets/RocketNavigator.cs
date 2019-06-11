@@ -7,32 +7,45 @@ public class RocketNavigator : MonoBehaviour
     private bool _rotating = true;
     private Vector3 _inputUp;
     private bool _died;
-    
+
     public Rigidbody2D rb;
     public GameObject flame;
     public Text text;
     public LevelGenerator levelGenerator;
+    private float forceStrength = 20f;
+    private int rotSpeed = 40;
 
     void FixedUpdate()
     {
         if (_died) return;
-        
+
         flame.SetActive(Input.touchCount > 0);
         if (Input.touchCount > 0)
         {
-            // Max. Upwards Velocity
+            Vector3 dir = rb.velocity;
+
+            //forward or reverse thrust based on tilt
+            _inputUp = Vector3.up;
+            rb.AddRelativeForce(_inputUp * forceStrength);
+
+            //rotation left or right based on tilt
+            dir.z = Input.acceleration.x;
+
+            //adding force to right or left based on tilt
+            rb.AddRelativeForce(Vector3.forward * dir.z * forceStrength);
+
+            // Limit up force
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, 9f);
 
-            // Add Forces
-            _inputUp = Vector3.up * 15;
-            rb.AddRelativeForce((15 * Input.acceleration.x * Vector3.right));
-            rb.AddRelativeForce(_inputUp + transform.rotation.eulerAngles * 100);
-
-            // Add Rotation to the rocket object
-            transform.rotation = Quaternion.Euler(0, 0, (-Input.acceleration.x * 50) * 2);
-
-            // For testing the values of Input.acceleration
-            text.text = Input.acceleration.x.ToString();
+            // Rotate Rocket based on tilt of the phone
+            if (dir.z > .2)
+            {
+                transform.Rotate(Vector3.forward * (-rotSpeed * Time.deltaTime), Space.World);
+            }
+            else if (dir.z < -.2)
+            {
+                transform.Rotate(Vector3.forward * (rotSpeed * Time.deltaTime), Space.World);
+            }
         }
     }
 
