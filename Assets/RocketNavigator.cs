@@ -41,7 +41,7 @@ public class RocketNavigator : MonoBehaviour
             dir.z = Input.acceleration.x;
 
             //adding force to right or left based on tilt
-            rb.AddRelativeForce(Vector3.forward * dir.z * forceStrength);
+            rb.AddRelativeForce(Vector3.forward * dir.z);
 
             // Limit up force
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, 9f);
