@@ -13,7 +13,7 @@ public class Asteroid : MonoBehaviour
     void Start()
     {
         Vector3 position =
-            Camera.main.ScreenToWorldPoint(new Vector3(Screen.height / 2, Screen.width / 2, 0));
+            Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, 0));
         position.z = 0;
 
         var v = velocity + new Vector2
