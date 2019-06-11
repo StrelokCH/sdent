@@ -6,12 +6,16 @@ public class CameraFollow : MonoBehaviour
 {
     public Vector3 startPosition;
     public Transform target;
+    private float offsetFactor = 0.5f;
+
+    private float TargetY => target.position.y + LevelGenerator.levelHeight * offsetFactor;
+
     // Update is called once per frame
     void Update()
     {
-        if (target.position.y > transform.position.y)
+        if (TargetY > transform.position.y)
         {
-            transform.position = new Vector3(transform.position.x, target.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x, TargetY, transform.position.z);
         }
     }
 
