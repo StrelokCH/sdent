@@ -15,12 +15,21 @@ public class RocketNavigator : MonoBehaviour
     private float forceStrength = 20f;
     private int rotSpeed = 40;
 
+    //Set to true for auto take off :)
+    private bool cheatMode = false;
+    private Vector3 _startPosition;
+
+    void Start()
+    {
+       _startPosition = transform.position;
+    }
+
     void FixedUpdate()
     {
         if (_died) return;
 
         flame.SetActive(Input.touchCount > 0);
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 || cheatMode)
         {
             Vector3 dir = rb.velocity;
 
@@ -63,10 +72,21 @@ public class RocketNavigator : MonoBehaviour
         }
     }
 
+    public void ShowTurnToLand()
+    {
+        rb.isKinematic = true;
+    }
+
     public void Reset()
     {
-        rb.velocity = Vector2.zero;
-        gameObject.transform.rotation = Quaternion.identity;
+        transform.position = _startPosition;
         _died = false;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.angularDrag = 0f;
+        gameObject.transform.rotation = Quaternion.identity;
+        transform.localPosition = _startPosition;
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 }
