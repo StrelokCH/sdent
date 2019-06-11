@@ -26,7 +26,10 @@ public class LevelGenerator : MonoBehaviour
     public GameObject restartContainer;
     readonly float saveZone = 20f;
 
-    public static float marsHeight = 20f;
+    private bool isOver;
+
+    public static float marsHeight = 40f;
+    public static float landingHeight = 20f;
     public static float levelWidth = 2f;
     public static float levelHeight = 8f;
 
@@ -41,7 +44,7 @@ public class LevelGenerator : MonoBehaviour
         Instantiate(marsPrefab, new Vector3(0, marsHeight, 0), Quaternion.identity);
 
         SpawnStars();
-        InvokeRepeating("CreateAsteroid", 5f, 1.5f);
+        //InvokeRepeating("CreateAsteroid", 5f, 1.5f);
     }
 
     void Update()
@@ -67,8 +70,9 @@ public class LevelGenerator : MonoBehaviour
             OnRocketDied();
         }
 
-        if (rocket.transform.position.y > marsHeight)
+        if (rocket.transform.position.y > landingHeight && !isOver)
         {
+            isOver = true;
             _rocketNavigator.ShowTurnToLand();
         }
     }

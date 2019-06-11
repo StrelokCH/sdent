@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8673589630603747370}
   m_Layer: 0
   m_Name: Mars
-  m_TagString: Asteroid
+  m_TagString: Mars
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

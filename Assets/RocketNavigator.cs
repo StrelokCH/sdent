@@ -1,12 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class RocketNavigator : MonoBehaviour
 {
+    public String MarsTag = "Mars";
     private float _speedX;
     private bool _rotating = true;
     private Vector3 _inputUp;
     private bool _died;
+    private bool _isLanding;
 
     public Rigidbody2D rb;
     public GameObject flame;
@@ -19,9 +23,10 @@ public class RocketNavigator : MonoBehaviour
     private bool cheatMode = false;
     private Vector3 _startPosition;
 
+
     void Start()
     {
-       _startPosition = transform.position;
+        _startPosition = transform.position;
     }
 
     void FixedUpdate()
@@ -56,6 +61,8 @@ public class RocketNavigator : MonoBehaviour
                 transform.Rotate(Vector3.forward * (rotSpeed * Time.deltaTime), Space.World);
             }
         }
+
+        //text.text = rb.velocity.y.ToString();
     }
 
     private void OnBecameInvisible()
@@ -69,12 +76,35 @@ public class RocketNavigator : MonoBehaviour
         {
             _died = true;
             levelGenerator.OnRocketDied();
+        } else if (other.gameObject.CompareTag(MarsTag))
+        {
+            // Not working yet
+            if (rb.velocity.y > 2f)
+            {
+                _died = true;
+                levelGenerator.OnRocketDied();
+            }
+            else
+            {
+                print("Win");
+            }
         }
     }
 
     public void ShowTurnToLand()
     {
-        rb.isKinematic = true;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.velocity = Vector2.zero;
+        _isLanding = true;
+        StartCoroutine(TurnAllUpside());
+    }
+
+    private IEnumerator TurnAllUpside()
+    {
+        yield return new WaitForSeconds(2);
+        gameObject.transform.rotation =  Quaternion.Euler(new Vector3(0,0,180));
+        rb.gravityScale = -1;
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void Reset()
@@ -85,8 +115,10 @@ public class RocketNavigator : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.angularDrag = 0f;
+        rb.gravityScale = 1;
         gameObject.transform.rotation = Quaternion.identity;
         transform.localPosition = _startPosition;
         rb.bodyType = RigidbodyType2D.Dynamic;
+        _isLanding = false;
     }
 }
