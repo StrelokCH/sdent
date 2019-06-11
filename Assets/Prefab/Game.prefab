@@ -58,6 +58,8 @@ MonoBehaviour:
   asteroidPrefab: {fileID: 6625850606370902170, guid: 1fbe11be28cafd04994550c079adf77f,
     type: 3}
   asteroidContainer: {fileID: 6304773949393176916}
+  marsPrefab: {fileID: 4872809494225939224, guid: 4ba1e26cc0b95454d9fef9760ace0035,
+    type: 3}
   rocket: {fileID: 8682363063386645033}
   restartContainer: {fileID: 8658178023192657504}
 --- !u!114 &3153974181174639218
@@ -1351,7 +1353,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012692928, y: 1.5531013}
+  m_Offset: {x: -0.012692928, y: 1.7962596}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1362,7 +1364,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9900472, y: 2.2601619}
+  m_Size: {x: 1.9900472, y: 1.7738224}
   m_EdgeRadius: 0
 --- !u!114 &8682363063386645037
 MonoBehaviour:

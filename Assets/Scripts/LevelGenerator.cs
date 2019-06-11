@@ -11,19 +11,22 @@ public class LevelGenerator : MonoBehaviour
     private Vector3 _starSpawnPosition = new Vector3(0, 0, 1);
     private float minY = 0.1f;
     private float maxY = 0.5f;
-    
+
     public GameObject starPrefab;
     public int numberOfStars = 200;
     public Transform starContainer;
-    
+
     public GameObject asteroidPrefab;
     public Transform asteroidContainer;
 
+    public GameObject marsPrefab;
+
     public GameObject rocket;
+    private RocketNavigator _rocketNavigator;
     public GameObject restartContainer;
     readonly float saveZone = 20f;
-    
-    public static float marsHeight = 200f;
+
+    public static float marsHeight = 20f;
     public static float levelWidth = 2f;
     public static float levelHeight = 8f;
 
@@ -32,8 +35,10 @@ public class LevelGenerator : MonoBehaviour
     {
         _cameraFollow = Camera.main.gameObject.AddComponent<CameraFollow>();
         _cameraFollow.target = rocket.transform;
-        _startPosition = rocket.transform.position;
+        _rocketNavigator = rocket.GetComponent<RocketNavigator>();
         restartContainer.SetActive(false);
+
+        Instantiate(marsPrefab, new Vector3(0, marsHeight, 0), Quaternion.identity);
 
         SpawnStars();
         InvokeRepeating("CreateAsteroid", 5f, 1.5f);
@@ -60,6 +65,11 @@ public class LevelGenerator : MonoBehaviour
         if (rocket.transform.position.y < position.y - levelHeight / 2)
         {
             OnRocketDied();
+        }
+
+        if (rocket.transform.position.y > marsHeight)
+        {
+            _rocketNavigator.ShowTurnToLand();
         }
     }
 
@@ -102,10 +112,9 @@ public class LevelGenerator : MonoBehaviour
         }
 
         _starSpawnPosition = new Vector3(0, 0, 1);
-        rocket.transform.position = _startPosition;
         _cameraFollow.Reset();
         restartContainer.SetActive(false);
         _flying = false;
-        rocket.GetComponent<RocketNavigator>().Reset();
+        _rocketNavigator.Reset();
     }
 }
