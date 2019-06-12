@@ -26,6 +26,11 @@ public class RocketNavigator : MonoBehaviour
     private float _hickupChance = 1f / 350f; // 50 checks per second
     private float _hickupDuration = 0.3f;
 
+    // must be between 0 and 1
+    // 1=no horizontal breaking
+    // 0=horizontally almost fixed
+    private float _horizontalBreak = 0.9f;
+
     //Set to true for auto take off :)
     private bool cheatMode = false;
     private Vector3 _startPosition;
@@ -60,6 +65,9 @@ public class RocketNavigator : MonoBehaviour
         if (Input.touchCount > 0 || cheatMode)
         {
             Vector3 dir = rb.velocity;
+
+            // decrease horizontal velocity to make handling of drift easier
+            rb.velocity = new Vector2(rb.velocity.x * _horizontalBreak, rb.velocity.y);
 
             //forward or reverse thrust based on tilt
             _inputUp = Vector3.up;
