@@ -83,7 +83,7 @@ public class RocketNavigator : MonoBehaviour
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, MaxVelocity);
 
             // Rotate Rocket based on tilt of the phone
-            var invert = _isLanding ? -1 : 1;
+            var invert = (_isLanding && !GameHandler.Instance.Rocket.IsWierd) ? -1 : 1;
             transform.Rotate(Vector3.forward * (invert * -RotSpeed * dir.z * Time.deltaTime), Space.World);
         }
 

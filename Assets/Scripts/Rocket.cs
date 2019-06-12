@@ -21,6 +21,7 @@ public class Rocket
         get => flame;
         set => flame = value;
     }
+
     public float ThrustFactor
     {
         get
@@ -38,11 +39,20 @@ public class Rocket
             }
         }
     }
+
     public bool HasHickups
     {
         get
         {
             return flame == 2;
+        }
+    }
+
+    public bool IsWierd
+    {
+        get
+        {
+            return wings == 1;
         }
     }
 
