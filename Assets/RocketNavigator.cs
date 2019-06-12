@@ -56,7 +56,7 @@ public class RocketNavigator : MonoBehaviour
             transform.Rotate(Vector3.forward * (-RotSpeed * dir.z * Time.deltaTime), Space.World);
         }
 
-        text.text = Input.acceleration.y.ToString();
+        //text.text = Input.acceleration.y.ToString();
     }
 
     private void OnBecameInvisible()
@@ -74,14 +74,14 @@ public class RocketNavigator : MonoBehaviour
         else if (other.gameObject.CompareTag(MarsTag))
         {
             // Not working yet
-            if (other.relativeVelocity.magnitude > 2f)
+            if (other.relativeVelocity.magnitude < 5f && _isLanding)
             {
-                _died = true;
-                levelGenerator.OnRocketDied();
+                levelGenerator.CongratulationsContainer.SetActive(true);
             }
             else
             {
-                print("Win");
+                _died = true;
+                levelGenerator.OnRocketDied();
             }
         }
     }
@@ -90,7 +90,6 @@ public class RocketNavigator : MonoBehaviour
     {
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.velocity = Vector2.zero;
-        _isLanding = true;
         cheatMode = false;
         StartCoroutine(TurnAllUpside());
     }
@@ -103,9 +102,11 @@ public class RocketNavigator : MonoBehaviour
         {
             gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 180));
             rb.gravityScale = -1;
+            _isLanding = true;
         }
         else
         {
+            levelGenerator.FuckedUpContainer.SetActive(true);
             //"You missed it"
         }
 

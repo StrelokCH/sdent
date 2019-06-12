@@ -25,6 +25,8 @@ public class LevelGenerator : MonoBehaviour
     private RocketNavigator _rocketNavigator;
     public GameObject restartContainer;
     public GameObject TurnToLandContainer;
+    public GameObject CongratulationsContainer;
+    public GameObject FuckedUpContainer;
     readonly float saveZone = 10f;
 
     private bool isOver;
@@ -42,6 +44,8 @@ public class LevelGenerator : MonoBehaviour
         _rocketNavigator = rocket.GetComponent<RocketNavigator>();
         restartContainer.SetActive(false);
         TurnToLandContainer.SetActive(false);
+        CongratulationsContainer.SetActive(false);
+        FuckedUpContainer.SetActive(false);
 
         Instantiate(marsPrefab, new Vector3(0, marsHeight, 0), Quaternion.identity);
 
@@ -104,7 +108,7 @@ public class LevelGenerator : MonoBehaviour
     {
         if (_spawnAsteroids)
         {
-            //Instantiate(asteroidPrefab, asteroidContainer);
+            Instantiate(asteroidPrefab, asteroidContainer);
         }
     }
 
@@ -126,6 +130,8 @@ public class LevelGenerator : MonoBehaviour
         TurnToLandContainer.SetActive(false);
         _spawnAsteroids = false;
         _rocketNavigator.Reset();
+        CongratulationsContainer.SetActive(false);
+        FuckedUpContainer.SetActive(false);
         isOver = false;
     }
 }
