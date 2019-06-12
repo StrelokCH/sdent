@@ -38,6 +38,13 @@ public class Rocket
             }
         }
     }
+    public bool HasHickups
+    {
+        get
+        {
+            return flame == 2;
+        }
+    }
 
     public float RotSpeedFactor
     {

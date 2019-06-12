@@ -10,6 +10,7 @@ public class RocketNavigator : MonoBehaviour
     private bool _rotating = true;
     private Vector3 _inputUp;
     private bool _died;
+    private bool _hickup;
     private bool _isLanding;
 
     public Rigidbody2D rb;
@@ -20,6 +21,10 @@ public class RocketNavigator : MonoBehaviour
     private float MaxVelocity => 6f * GameHandler.Instance.Rocket.ThrustFactor;
     private float ForceStrength => 20f * GameHandler.Instance.Rocket.ThrustFactor;
     private float RotSpeed => 200 * GameHandler.Instance.Rocket.RotSpeedFactor;
+
+    // hickup settings
+    private float _hickupChance = 1f / 350f; // 50 checks per second
+    private float _hickupDuration = 0.3f;
 
     //Set to true for auto take off :)
     private bool cheatMode = false;
@@ -33,6 +38,23 @@ public class RocketNavigator : MonoBehaviour
     void FixedUpdate()
     {
         if (_died) return;
+
+        // hicksup handling
+        if (GameHandler.Instance.Rocket.HasHickups)
+        {
+            if (_hickup)
+            {
+                // flicker flame by fast disabling/enabling
+                flame.SetActive(!flame.activeSelf);
+                return;
+            }
+            else if (UnityEngine.Random.value < _hickupChance)
+            {
+                print("hickup!");
+                _hickup = true;
+                Invoke("EndHickup", _hickupDuration);
+            }
+        }
 
         flame.SetActive(Input.touchCount > 0);
         if (Input.touchCount > 0 || cheatMode)
@@ -112,6 +134,12 @@ public class RocketNavigator : MonoBehaviour
 
         levelGenerator.TurnToLandContainer.SetActive(false);
         rb.bodyType = RigidbodyType2D.Dynamic;
+    }
+
+    private void EndHickup()
+    {
+        print("end hickup");
+        _hickup = false;
     }
 
     public void Reset()
