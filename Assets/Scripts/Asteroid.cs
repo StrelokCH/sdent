@@ -6,8 +6,8 @@ public class Asteroid : MonoBehaviour
 {
     public static string AsteroidTag = "Asteroid";
 
-    Vector2 velocity = new Vector2(0, -4);
-    readonly float velocityRangeX = .9f;
+    Vector2 velocity = new Vector2(0, -2);
+    readonly float velocityRangeX = .5f;
 
     // Start is called before the first frame update
     void Start()

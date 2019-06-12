@@ -16,13 +16,14 @@ public class RocketNavigator : MonoBehaviour
     public GameObject flame;
     public Text text;
     public LevelGenerator levelGenerator;
-    private float forceStrength = 20f;
-    private int rotSpeed = 40;
+
+    private float MaxVelocity => 6f * GameHandler.Instance.Rocket.ThrustFactor;
+    private float ForceStrength => 20f * GameHandler.Instance.Rocket.ThrustFactor;
+    private float RotSpeed => 200 * GameHandler.Instance.Rocket.RotSpeedFactor;
 
     //Set to true for auto take off :)
     private bool cheatMode = false;
     private Vector3 _startPosition;
-
 
     void Start()
     {
@@ -40,7 +41,7 @@ public class RocketNavigator : MonoBehaviour
 
             //forward or reverse thrust based on tilt
             _inputUp = Vector3.up;
-            rb.AddRelativeForce(_inputUp * forceStrength);
+            rb.AddRelativeForce(_inputUp * ForceStrength);
 
             //rotation left or right based on tilt
             dir.z = Input.acceleration.x;
@@ -49,20 +50,13 @@ public class RocketNavigator : MonoBehaviour
             rb.AddRelativeForce(Vector3.forward * dir.z);
 
             // Limit up force
-            rb.velocity = Vector3.ClampMagnitude(rb.velocity, 9f);
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, MaxVelocity);
 
             // Rotate Rocket based on tilt of the phone
-            if (dir.z > .2)
-            {
-                transform.Rotate(Vector3.forward * (-rotSpeed * Time.deltaTime), Space.World);
-            }
-            else if (dir.z < -.2)
-            {
-                transform.Rotate(Vector3.forward * (rotSpeed * Time.deltaTime), Space.World);
-            }
+            transform.Rotate(Vector3.forward * (-RotSpeed * dir.z * Time.deltaTime), Space.World);
         }
 
-        //text.text = rb.velocity.y.ToString();
+        text.text = Input.acceleration.y.ToString();
     }
 
     private void OnBecameInvisible()
@@ -76,10 +70,11 @@ public class RocketNavigator : MonoBehaviour
         {
             _died = true;
             levelGenerator.OnRocketDied();
-        } else if (other.gameObject.CompareTag(MarsTag))
+        }
+        else if (other.gameObject.CompareTag(MarsTag))
         {
             // Not working yet
-            if (rb.velocity.y > 2f)
+            if (other.relativeVelocity.magnitude > 2f)
             {
                 _died = true;
                 levelGenerator.OnRocketDied();
@@ -96,14 +91,25 @@ public class RocketNavigator : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.velocity = Vector2.zero;
         _isLanding = true;
+        cheatMode = false;
         StartCoroutine(TurnAllUpside());
     }
 
     private IEnumerator TurnAllUpside()
     {
         yield return new WaitForSeconds(2);
-        gameObject.transform.rotation =  Quaternion.Euler(new Vector3(0,0,180));
-        rb.gravityScale = -1;
+
+        if (Input.acceleration.y > 0.7)
+        {
+            gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 180));
+            rb.gravityScale = -1;
+        }
+        else
+        {
+            //"You missed it"
+        }
+
+        levelGenerator.TurnToLandContainer.SetActive(false);
         rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
@@ -117,6 +123,7 @@ public class RocketNavigator : MonoBehaviour
         rb.angularDrag = 0f;
         rb.gravityScale = 1;
         gameObject.transform.rotation = Quaternion.identity;
+        rb.mass = 1f * GameHandler.Instance.Rocket.MassFactor;
         transform.localPosition = _startPosition;
         rb.bodyType = RigidbodyType2D.Dynamic;
         _isLanding = false;
