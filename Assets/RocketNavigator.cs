@@ -102,10 +102,10 @@ public class RocketNavigator : MonoBehaviour
             _died = true;
             levelGenerator.OnRocketDied();
         }
-        else if (other.gameObject.CompareTag(MarsTag))
+        else if (other.gameObject.CompareTag(MarsTag) && !_died)
         {
             // Not working yet
-            if (other.relativeVelocity.magnitude < 5f && _isLanding && !_died)
+            if (other.relativeVelocity.magnitude < 5f && _isLanding)
             {
                 rb.velocity = Vector2.zero;
                 rb.angularVelocity = 0f;
