@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class RocketNavigator : MonoBehaviour
 {
     public String MarsTag = "Mars";
+    public String FloorTag = "Floor";
     private float _speedX;
     private bool _rotating = true;
     private Vector3 _inputUp;
@@ -23,8 +24,8 @@ public class RocketNavigator : MonoBehaviour
     private float RotSpeed => 200 * GameHandler.Instance.Rocket.RotSpeedFactor;
 
     // hickup settings
-    private float _hickupChance = 1f / 350f; // 50 checks per second
-    private float _hickupDuration = 0.3f;
+    private float _hickupChance = 1f / 200f; // 50 checks per second
+    private float _hickupDuration = 1f;
 
     // must be between 0 and 1
     // 1=no horizontal breaking
@@ -52,8 +53,7 @@ public class RocketNavigator : MonoBehaviour
                 // flicker flame by fast disabling/enabling
                 flame.SetActive(!flame.activeSelf);
                 return;
-            }
-            else if (UnityEngine.Random.value < _hickupChance)
+            } else if (UnityEngine.Random.value < _hickupChance)
             {
                 print("hickup!");
                 _hickup = true;
@@ -105,7 +105,7 @@ public class RocketNavigator : MonoBehaviour
         else if (other.gameObject.CompareTag(MarsTag) && !_died)
         {
             // Not working yet
-            if (other.relativeVelocity.magnitude < 5f && _isLanding)
+            if (other.relativeVelocity.magnitude < 4f && _isLanding)
             {
                 rb.velocity = Vector2.zero;
                 rb.angularVelocity = 0f;
@@ -118,6 +118,10 @@ public class RocketNavigator : MonoBehaviour
                 _died = true;
                 levelGenerator.OnRocketDied();
             }
+        } else if (other.gameObject.CompareTag(FloorTag) && gameObject.transform.rotation.z > 0.50)
+        {
+            _died = true;
+            levelGenerator.OnRocketDied();
         }
     }
 
