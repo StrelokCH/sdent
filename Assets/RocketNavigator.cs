@@ -33,7 +33,7 @@ public class RocketNavigator : MonoBehaviour
     private float _horizontalBreak = 0.9f;
 
     //Set to true for auto take off :)
-    private bool cheatMode = true;
+    private bool cheatMode = false;
     private Vector3 _startPosition;
 
     void Start()
