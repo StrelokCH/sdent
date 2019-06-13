@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class RocketNavigator : MonoBehaviour
 {
     public String MarsTag = "Mars";
+    public String FloorTag = "Floor";
     private float _speedX;
     private bool _rotating = true;
     private Vector3 _inputUp;
@@ -118,6 +119,11 @@ public class RocketNavigator : MonoBehaviour
                 _died = true;
                 levelGenerator.OnRocketDied();
             }
+        }
+        else if (other.gameObject.CompareTag(FloorTag) && gameObject.transform.rotation.z > 0.50)
+        {
+            _died = true;
+            levelGenerator.OnRocketDied();
         }
     }
 
