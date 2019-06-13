@@ -58,7 +58,7 @@ public class LevelGenerator : MonoBehaviour
         var position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.height / 2, Screen.width / 2, 0));
         Debug.Log(position.y);
 
-        if (!_spawnAsteroids && !isOver)
+        if (!_spawnAsteroids)
         {
             if (position.y > saveZone)
             {

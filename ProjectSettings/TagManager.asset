@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Asteroid
   - Mars
-  - Floor
   layers:
   - Default
   - TransparentFX
