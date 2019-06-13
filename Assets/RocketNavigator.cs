@@ -24,8 +24,8 @@ public class RocketNavigator : MonoBehaviour
     private float RotSpeed => 200 * GameHandler.Instance.Rocket.RotSpeedFactor;
 
     // hickup settings
-    private float _hickupChance = 1f / 350f; // 50 checks per second
-    private float _hickupDuration = 0.3f;
+    private float _hickupChance = 1f / 200f; // 50 checks per second
+    private float _hickupDuration = 1f;
 
     // must be between 0 and 1
     // 1=no horizontal breaking
@@ -33,7 +33,7 @@ public class RocketNavigator : MonoBehaviour
     private float _horizontalBreak = 0.9f;
 
     //Set to true for auto take off :)
-    private bool cheatMode = false;
+    private bool cheatMode = true;
     private Vector3 _startPosition;
 
     void Start()
