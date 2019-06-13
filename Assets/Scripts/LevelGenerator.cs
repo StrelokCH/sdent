@@ -31,7 +31,7 @@ public class LevelGenerator : MonoBehaviour
 
     private bool isOver;
 
-    public static float marsHeight = 90f;
+    public static float marsHeight = 110f;
     public static float landingHeight = 60f;
     public static float levelWidth = 2f;
     public static float levelHeight = 8f;
