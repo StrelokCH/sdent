@@ -13,6 +13,7 @@ public class RocketNavigator : MonoBehaviour
     private bool _died;
     private bool _hickup;
     private bool _isLanding;
+    private bool _landed;
 
     public Rigidbody2D rb;
     public GameObject flame;
@@ -44,6 +45,7 @@ public class RocketNavigator : MonoBehaviour
     void FixedUpdate()
     {
         if (_died) return;
+        if (_landed) return;
 
         // hicksup handling
         if (GameHandler.Instance.Rocket.HasHickups)
@@ -112,6 +114,7 @@ public class RocketNavigator : MonoBehaviour
                 rb.angularVelocity = 0f;
                 rb.angularDrag = 0f;
                 rb.bodyType = RigidbodyType2D.Kinematic;
+                _landed = true;
                 levelGenerator.CongratulationsContainer.SetActive(true);
             }
             else
@@ -175,5 +178,6 @@ public class RocketNavigator : MonoBehaviour
         transform.localPosition = _startPosition;
         rb.bodyType = RigidbodyType2D.Dynamic;
         _isLanding = false;
+        _landed = false;
     }
 }
